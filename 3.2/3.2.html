@@ -1,0 +1,24 @@
+<html>
+
+<body>
+    <script>
+        function redhat() {
+            var v = new RedHatValidation(1, 100);
+        }
+        class RedHatValidation {
+            constructor(start, end) {
+                let ret = "";
+                for (let value = start; value <= end; value++) {
+                    if (value % 2 == 0) ret += "Red";
+                    if (value % 5 == 0) ret += "Hat";
+                    if (value % 2 != 0 && value % 5 != 0) ret += value;
+                    if (value < end) ret += " - ";
+                }
+                document.write(ret);
+            }
+        }
+        redhat();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <title>Weather</title>
+
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+    <header class="header-footer-bg">
+        <div class="center">
+            <h3>Blue Sky</h3>
+
+        </div>
+    </header>
+
+    <div id="count" class="">
+        <div id="formWrapper">
+            <br>
+
+            <div class="input-div">
+                <div id="geolocation" class="geolocation"></div>
+                <div id="googleMap" style="width:100%;height:200px;"></div>
+
+            </div>
+
+            <br>
+
+            <button id="check-weather" type="button" class="check-weather">Check weather</button>
+            <div id="weatherResponse" class="cloudResponse"></div>
+        </div>
+    </div>
+
+    <footer class="header-footer-bg">
+        <div>
+            <small class="right">
+                <!-- v.&nbsp;{{ version }} -->
+            </small>
+        </div>
+    </footer>
+
+    <script src="feedhenry.js"></script>
+    <script src="weather.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCOe-QnKSpBq30vWOzTVTz2pLmzuaj6U0" type="text/javascript"></script>
+</body>
+
+</html>
